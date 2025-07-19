@@ -18,7 +18,7 @@ jobs:
 
       - name: Commit and Push
         run: |
-          git config --global username "Bennnnip"
+          git config --global user.name "Bennnnip"
           git config --global user.email "vissarut.prom@gmailcom"
           git add .
           git commit -m "Daily update $(date)" || echo "Nothing to commit"
