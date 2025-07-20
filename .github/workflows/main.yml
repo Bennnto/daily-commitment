@@ -24,4 +24,4 @@ jobs:
           git config --global user.email "vissarut.prom@gmail.com"
           git add .
           git commit -m "Daily update $(date)" || echo "Nothing to commit"
-          git push
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
